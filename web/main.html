@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bedolaga</title>
+		<script src="eel.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<header>
+			<h3>БЕДОЛАГА </h3>
+		</header>
+		
+		<main>
+			<div id="main-content" class="text">
+				
+			</div>
+
+			<div class="settings-div">
+				<h3>Настройки</h3>
+				<h4>Ваш chat-GPT токен</h4>
+				<input placeholder="Ваш chat-GPT токен">
+				<h4>Ваша раюочая директория</h4>
+				<input placeholder="Ваша раюочая директория">
+			</div>
+
+			<div class="info-div">
+				<h3>Информация о приложении</h3>
+				<p>Версия - 1.2.1</p>
+				<p>Наш<a href="http://bedolagabotic.pythonanywhere.com/">Сайт</a></p>
+				<p>Бедолага - Голосовой ассистент Бедолага - умный помощник, способный автоматизировать различные процессы на вашем девайсе. Может выполнять различные функции: от открытия любимых сайтов и программ, до полноценного диалога с пользователем.</p>
+				<p>Социальные сети</p>
+				<p>Исходный код</p>
+			</div>
+
+			<div class="buttons">
+				<button id="set-btn" class="i"><img id="settings" class="icon" src="img/setting.png"></button>
+				<button id="start" class="i"><img id="microphone" src="img/микро-removebg-preview.png"></button>
+				<button id="info-btn" class="i"><img class="icon" id="info" src="img/info.png"></button>
+			</div>
+		</main>
+
+			<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+			<script type="text/javascript">
+var output_data = [];
+var data = [];
+async function start() {
+    let gpt_request = false;
+    let gpt_code = false;
+    let google_request = false;
+    let dialog = false;
+    let is_active_command = false;
+    let weather = false;
+				
+    await eel.main(gpt_request, gpt_code, google_request, dialog, is_active_command, weather);
+}
+
+
+$('#start').click(function(){
+    start();
+});
+
+/*async function doSomethingWithFileContent(json) {
+ await console.log(json);
+}
+
+
+async function someFileProcessingLoop(path, timeout) {
+	await fetch(path)
+		.then(request => request.json())
+		.then(content => {
+			doSomethingWithFileContent(content);
+			return content;
+		});
+	setTimeout(() => someFileProcessingLoop(path, timeout), timeout); // schedule a new loop (recursion!)
+}
+someFileProcessingLoop("file.json", 1000);*/
+
+
+// Запуск обеих функций параллельно
+/*Promise.all([start(), someFileProcessingLoop("file.json", 1000)])
+  .then(() => {
+    console.log('Обе функции выполнены');
+  })
+  .catch(error => {
+    console.error('Ошибка:', error);
+  });*/
+
+
+    // Обработчик события для кнопки
+/*$("#update").click(function() {
+  	console.log("ok");
+  	console.log("hi");
+  	hi = someFileProcessingLoop("file.json", 1000);
+  	console.log(hi);
+	someFileProcessingLoop("file.json", 1000).then(result => {
+	console.log(result); // Вывод результата
+	}).catch(error => {
+	console.error(error); // Вывод ошибки
+});
+});
+
+function updateText() {
+    $('.text').empty(); // Очистка содержимого элемента .text
+    // Перебираем элементы массива и создаем <p> элемент для каждого элемента
+    for (var i = 0; i < data.length; i++) {
+        var className = i % 2 === 0 ? 'right' : 'left';
+        var $p = $('<div>', { text: data[i], class: className });
+        var $br = $('<br>');
+        $('.text').append($p);
+        $('.text').append($br);
+    }
+
+    $('.text').parent().scrollTop($('.text').parent()[0].scrollHeight);
+}*/
+
+/*$(document).ready(function() {
+    updateData(); // Вызов функции при загрузке страницы
+    setInterval(updateData, 1000); // Обновление данных каждую секунду
+});*/
+
+
+		</script>
+	</body>
+</html>

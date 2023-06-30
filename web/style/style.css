@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #EBECF0;
+	font-family: sans-serif;
+}
+
+h3 {
+	text-align: center;
+}
+
+.settings-div {
+	display: none;
+}
+
+.info-div {
+	display: none;
+}
+
+.buttons {
+	height: 100px;
+}
+
+.icon {
+	width: 55px;
+	height: 55px;
+	background-color: #EBECF0;
+}
+
+.i {
+	border: none;
+	background-color: #EBECF0;
+}
+
+#info {
+	width: 65px;
+	height: 65px;
+}
+
+#microphone {
+	background-color: #5E17EB;
+	border-radius: 100%;
+	padding: 10px;
+	width: 65px;
+	height: 65px;
+}
+
+#set-btn {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#info-btn {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+#start {
+	position: fixed;
+	bottom: 0;
+	left: 65px;
+	right: 65px;
+	text-align: center;
+}
+
+.text {
+	overflow-y: auto;
+  	height: 300px;
+}
+
+
+
+.left {
+	background-color: #5E17EB;
+	position: relative;
+	left: 0;
+	bottom: -40px;
+	width: 100px;
+}
+
+.right {
+	background-color: #FFDE59;
+	position: relative;
+	right: 0;
+	float: right;
+	width: 100px;
+}
+
+
+.left, .right {
+	color: white;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 10px;
+}
+
